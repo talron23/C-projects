@@ -1,0 +1,3 @@
+Please enter a string (max 80 chars): The given string is: a bc de
+
+The given string is not a palindrome

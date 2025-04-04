@@ -1,0 +1,3 @@
+Enter an integer: 
+You entered: 15
+Number of zero bits are: 28
