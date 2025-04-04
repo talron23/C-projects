@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Function to check if a string is a palindrome (ignores spaces and tabs) */
+/* check if a string is a palindrome (ignores spaces and tabs) */
 int palindrome(char s[ ])
 {
     int i, j;
@@ -8,7 +8,7 @@ int palindrome(char s[ ])
     /* remove newline that fgets() might have added at the end */
     for (i = 0; s[i] != '\0'; i++) {
         if (s[i] == '\n') {
-            s[i] = '\0'; /* Make sure the string is properly terminated */
+            s[i] = '\0';
             break; /* Stop when we find the newline */
         }
     }
@@ -45,7 +45,7 @@ int main(void) {
 
     /* Ask the user for input (max 80 chars) */
     printf("Please enter a string (max 80 chars): ");
-    fgets(str, sizeof(str), stdin); /* Get the input string */
+    fgets(str, sizeof(str), stdin);
     printf("The given string is: %s\n", str); /* Show the string back to the user */
 
     /* Check if the input string is a palindrome and print the result */
